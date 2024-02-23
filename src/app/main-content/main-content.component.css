@@ -6,8 +6,6 @@ app-story-gallery {
 
 app-write-post-container {
     width: 100%;
-    background: var(--bg-color);
-    background: red;
     border-radius: 6px;
     padding: 20px;
     color: #626262;

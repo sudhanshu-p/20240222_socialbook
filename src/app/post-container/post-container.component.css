@@ -46,8 +46,6 @@
 .post-porfile-icon {
     display: flex;
     align-items: center;
-
-
 }
 
 .post-porfile-icon img {
@@ -59,5 +57,29 @@
 
 .post-row a {
     color: #9a9a9a;
+
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+
+}
+
+.user-profile img {
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-profile p {
+    margin-bottom: -5px;
+    font-weight: 500;
+    color: #626262;
+
+}
+
+.user-profile small {
+    font-size: 12px;
 
 }

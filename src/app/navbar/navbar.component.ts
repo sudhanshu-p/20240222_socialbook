@@ -10,7 +10,8 @@ import { Component, Input } from '@angular/core';
 export class NavbarComponent {
 
 	@Input() user: User = {
-		name: "User 007",
+		fname: "User",
+		lname: "007",
 		profileIcon: "error.jpg"
 	}
 

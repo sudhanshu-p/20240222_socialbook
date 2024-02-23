@@ -25,7 +25,8 @@ import { MainContentComponent } from './main-content/main-content.component';
 export class AppComponent {
   // User
   user: User = {
-    name: "Sudhanshu",
-    profileIcon: "https://i.postimg.cc/cHg22LhR/profile-pic.png"
+    fname: "Donald",
+    lname: "Trump",
+    profileIcon: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.starbiz.com%2F2018%2F12%2F28%2Fsalman-khan-1-e602.jpg&f=1&nofb=1&ipt=f04b0e1fe4b144be3de27aaa8f6bc05b023f4cf865be3f0cdd8ca4c4be0b9e2e&ipo=images"
   }
 }

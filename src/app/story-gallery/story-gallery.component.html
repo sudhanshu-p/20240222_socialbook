@@ -1,20 +1,11 @@
 <div class="story story1">
-    <img src="https://i.postimg.cc/TPh453Zz/upload.png">
+    <img src="{{profile_img_url}}">
     <p>Post Story</p>
 </div>
-<div class="story story2">
-    <img src="https://i.postimg.cc/XNPtfdVs/member-1.png">
-    <p>Alison</p>
+
+@for (story of stories; track story.id) {
+<div class="story story{{story.id}}">
+    <img src="{{story.profile_image_url}}">
+    <p>{{story.user_name}}</p>
 </div>
-<div class="story story3">
-    <img src="https://i.postimg.cc/4NhqByys/member-2.png">
-    <p>Jackson</p>
-</div>
-<div class="story story4">
-    <img src="https://i.postimg.cc/FH5qqvkc/member-3.png">
-    <p>Samona</p>
-</div>
-<div class="story story5">
-    <img src="https://i.postimg.cc/Sx65bPcP/member-4.png">
-    <p>John Doe</p>
-</div>
+}

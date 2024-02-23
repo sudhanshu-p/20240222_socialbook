@@ -1,4 +1,5 @@
 interface User {
-    name: String,
+    fname: String,
+    lname: String,
     profileIcon: String
 }

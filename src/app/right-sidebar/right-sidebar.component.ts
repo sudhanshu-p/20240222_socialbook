@@ -15,4 +15,11 @@ export class RightSidebarComponent {
 	]
 
 	sidebarAdUrl = "https://i.postimg.cc/CLXYx9BL/advertisement.png"
+
+	friendList = [
+		{name: "Mina Kumari", image_url: "https://theleaderspage.com/wp-content/uploads/2020/10/69036751_2655543887846269_4912322128440721408_o-980x980.jpg"},
+		{name: "Jackson Aston", image_url: "https://i.postimg.cc/4NhqByys/member-2.png"},
+		{name: "Samona Rose", image_url: "https://i.postimg.cc/FH5qqvkc/member-3.png"},
+		{name: "Mike Perez", image_url: "https://i.postimg.cc/Sx65bPcP/member-4.png"}
+	]
 }
