@@ -1,12 +1,12 @@
 <div class="user-profile">
-    <img src="https://i.postimg.cc/cHg22LhR/profile-pic.png">
+    <img src="{{user.profileIcon}}">
     <div>
-        <p>John Nicholson</p>
+        <p>{{user.fname + " " + user.lname}}</p>
         <small>Public <i class="fas fa-caret-down"></i></small>
     </div>
 </div>
 <div class="post-input-container">
-    <textarea rows="3" placeholder="What's on your mind, John?"></textarea>
+    <textarea rows="3" placeholder="What's on your mind, {{user.fname}}?"></textarea>
     <div class="add-post-links">
         <a href="#"><img src="https://i.postimg.cc/QMD2BDXs/live-video.png">Live Video</a>
         <a href="#"><img src="https://i.postimg.cc/6pKKZn0D/photo.png">Photo/Video</a>

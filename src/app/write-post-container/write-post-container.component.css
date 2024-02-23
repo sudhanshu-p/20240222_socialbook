@@ -58,3 +58,9 @@
     width: 20px;
     margin-right: 10px;
 }
+
+@media (max-width: 900px) {
+    .add-post-links {
+        flex-wrap: wrap;
+    }
+}

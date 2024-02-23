@@ -1,10 +1,12 @@
-<div class="story story1">
+<!-- We would want to give it background image,
+But I don't know if that's possible. -->
+<div class="story story1" [style]="getUserStoryStyles()">
     <img src="{{profile_img_url}}">
     <p>Post Story</p>
 </div>
 
 @for (story of stories; track story.id) {
-<div class="story story{{story.id}}">
+<div class="story story{{story.id}}" [style]="getStyleExpression(story.id)">
     <img src="{{story.profile_image_url}}">
     <p>{{story.user_name}}</p>
 </div>

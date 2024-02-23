@@ -25,3 +25,17 @@ app-right-sidebar {
 app-main-content {
     flex-basis: 47%;
 }
+
+@media(max-width: 900px) {
+    app-right-sidebar {
+        display: none;
+    }
+
+    app-left-sidebar {
+        display: none;
+    }
+
+    app-navbar {
+        flex-wrap: wrap;
+    }
+}

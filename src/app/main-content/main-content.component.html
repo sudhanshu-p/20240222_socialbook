@@ -1,5 +1,5 @@
-<app-story-gallery></app-story-gallery>
-<app-write-post-container></app-write-post-container>
+<app-story-gallery [user]="user"></app-story-gallery>
+<app-write-post-container [user]="user"></app-write-post-container>
 
 @for (post of posts; track post) {
 <app-post-container [post]="post"></app-post-container>
