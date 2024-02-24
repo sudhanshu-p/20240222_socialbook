@@ -1,7 +1,8 @@
 <app-navbar [user]="user"></app-navbar>
 
 <div class="container">
-    <app-left-sidebar></app-left-sidebar>
-    <app-main-content [user]="user"></app-main-content>
-    <app-right-sidebar></app-right-sidebar>
+    <app-left-sidebar [userShortcuts]="userShortcuts"></app-left-sidebar>
+    <app-main-content [user]="user" [posts]="posts" [stories]="stories"></app-main-content>
+    <app-right-sidebar [conversations]="conversationList" [eventsList]="eventsList"
+        [sidebarAdURL]="sidebarAdURL"></app-right-sidebar>
 </div>

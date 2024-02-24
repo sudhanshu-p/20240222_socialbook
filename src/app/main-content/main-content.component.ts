@@ -16,7 +16,6 @@ import { PostContainerComponent } from '../post-container/post-container.compone
 })
 
 export class MainContentComponent {
-
 	// User is taken as param from parent. 
 	// This is just the default fallback value 
 	@Input() user: User = {
@@ -25,46 +24,9 @@ export class MainContentComponent {
 		profileIcon: "error.jpg"
 	}
 
-	posts = [
-		{
-			profile_image_url: "https://i.postimg.cc/cHg22LhR/profile-pic.png",
-			profile_name: "John Nicholson",
-			timestamp: new Date(),
-			caption: "Subscribe @Vkive Tutorials Youtube Channel to watch more videos on website development and UI desings. #VkiveTutorials #YoutubeChannel",
-			image_url: "https://i.postimg.cc/9fjhGTY6/feed-image-1.png",
-			comment_count: 120, like_count: 45, share_count: 9
-		},
-		{
-			profile_image_url: "https://i.postimg.cc/cHg22LhR/profile-pic.png",
-			profile_name: "John Nicholso",
-			timestamp: new Date(),
-			caption: 'Like and share this video with friends, tag @Vkive Tutorials facebook page on your post. Ask your dobuts in the comments. #VkiveTutorials #YoutubeChannel',
-			image_url: "https://i.postimg.cc/Xvc0xJ2p/feed-image-2.png",
-			comment_count: 812, like_count: 1928, share_count: 2
-		},
-		{
-			profile_image_url: "https://i.postimg.cc/cHg22LhR/profile-pic.png",
-			profile_name: "John Nicholson",
-			timestamp: new Date(),
-			caption: 'Like and share this video with friends, tag @Vkive Tutorials facebook page on your post. Ask your dobuts in the comments. #VkiveTutorials #YoutubeChannel',
-			image_url: "https://i.postimg.cc/tJ7QXz9x/feed-image-3.png",
-			comment_count: 73, like_count: 4, share_count: 62
-		},
-		{
-			profile_image_url: "https://i.postimg.cc/cHg22LhR/profile-pic.png",
-			profile_name: "John Nicholson",
-			timestamp: new Date(),
-			caption: 'Like and share this video with friends, tag @Vkive Tutorials facebook page on your post. Ask your dobuts in the comments. #VkiveTutorials #YoutubeChannel',
-			image_url: "https://i.postimg.cc/hjDRYBwM/feed-image-4.png",
-			comment_count: 9, like_count: 9, share_count: 9
-		},
-		{
-			profile_image_url: "https://i.postimg.cc/cHg22LhR/profile-pic.png",
-			profile_name: "John Nicholson",
-			timestamp: new Date(),
-			caption: 'Like and share this video with friends, tag @Vkive Tutorials facebook page on your post. Ask your dobuts in the comments. #VkiveTutorials #YoutubeChannel',
-			image_url: "https://i.postimg.cc/ZRwztQzm/feed-image-5.png",
-			comment_count: 9, like_count: 9, share_count: 9
-		}
-	]
+	/** Holds information for all the posts to be displayed */
+	@Input() posts: Array<Post> = []
+
+	/** Holds information for all the stories to be displayed */
+	@Input() stories: Array<Story> = []
 }
