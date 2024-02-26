@@ -7,7 +7,7 @@ But I don't know if that's possible. -->
 
 @for (story of stories; track story.id) {
 <div class="story story{{story.id}}" [style]="getStyleExpression(story.id)">
-    <img src="{{story.profile_image_url}}">
-    <p>{{story.user_name}}</p>
+    <img src="{{ story.poster.profileIcon }}">
+    <p>{{ story.poster.fname }}</p>
 </div>
 }

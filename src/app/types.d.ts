@@ -10,8 +10,7 @@ interface Link {
 }
 
 interface Post {
-    profile_image_url: String,
-    profile_name: String,
+    poster: User,
     timestamp: String,
     caption: String,
     image_url: String,
@@ -28,6 +27,5 @@ interface NearbyEvents {
 interface Story {
     id: number,
     story_image_url: String,
-    profile_image_url: String,
-    user_name: String
+    poster: User
 }
